@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<section class="candidato">
+    <img src="@ViewBag.DatosCandidato.Foto">
+    <h2>@ViewBag.DatosCandidato.Nombre @ViewBag.DatosCandidato.Apellido</h2>
+    <h2>Fecha de Nacimiento: @ViewBag.DatosCandidato.FechaNacimiento..ToShortDateString()</h2>
+    <h2>Candidato a: @ViewBag.DatosCandidato.Postulacion</h2>
+    <a href='@Url.Action("VerDetallePartido","Home",new {IdPartido = ViewBag.DatosCandidato.IdPartido})'>Volver</a>
+</section>
+</body>
+</html>

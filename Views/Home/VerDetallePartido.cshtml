@@ -1,0 +1,36 @@
+@{
+  ViewData["Title"] = "Home Page";
+}
+<section class="datapartido">
+  <img src="@ViewBag.DatosPartido.Logo">
+  <div class="textopartido">
+    <h2>@ViewBag.DatosPartido.Nombre</h2>
+    <h2>Fecha de Fundacion: @ViewBag.DatosPartido.FechaFundacion.ToShortDateString()</h2>
+    <h2>Cantidad de Diputados: @ViewBag.DatosPartido.CantidadDiputados</h2>
+    <h2>Cantidad de Senadores: @ViewBag.DatosPartido.CantidadSenadores</h2>
+    <a href=@ViewBag.DatosPartido.SitioWeb>@ViewBag.DatosPartido.SitioWeb</a>
+  </div>
+</section>
+
+<section class = "sectiontarjeta">
+  @foreach (var item in ViewBag.ListaCandidatos)
+  {
+    <div class="tarjeta">
+      <div class="titulo">
+        <p>@item.Nombre @item.Apellido</p>
+      </div>
+      <div class="cuerpo">
+        <img src="@item.Foto">
+      </div>
+      <div class="pie">
+        <a href='@Url.Action("VerDetalleCandidato","Home",new { idCandidato = item.IdCandidato})'>Mas Informacion</a>
+        <a
+          href='@Url.Action("EliminarCandidato","Home",new { idCandidato = item.IdCandidato, idPartido = item.IdPartido})'>Elminar
+          Candidato</a>
+      </div>
+    </div>
+  }
+</section>
+<div class = "contenedorac">
+<a class = "agregarcandidatos" href='@Url.Action("AgregarCandidato","Home",new {idPartido = ViewBag.DatosPartido.idPartido})'>Agregar Candidato</a>
+</div>

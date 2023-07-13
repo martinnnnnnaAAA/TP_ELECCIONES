@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<section class = "partidos">
+  @foreach (var item in ViewBag.ListaPartidos)
+  {
+    <div class="tarjeta">
+      <div class="cuerpo">
+        <img src="@item.Logo">
+      </div>
+      <div class="pie">
+        <a href='@Url.Action("VerDetallePartido","Home",new {IdPartido = item.idPartido})'>@item.Nombre</a>
+      </div>
+    </div>
+  }
+</section>

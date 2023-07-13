@@ -1,0 +1,349 @@
+html {
+  font-size: 14px;
+}
+
+
+/* nav */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+nav {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+nav img {
+  height: 100px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li:hover {
+  background-color: #272727;
+}
+
+nav ul a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+}
+
+/* nav */
+
+/* partidos */
+
+.partidos {
+  display: flex;
+}
+
+
+/* partidos */
+
+/* destacados */
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/Imagenes/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 60px;
+}
+
+/* verdetallepartido */
+.datapartido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.datapartido img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.textopartido h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.textopartido h2:first-child {
+  margin-top: 0;
+}
+
+.textopartido h2:not(:first-child) {
+  margin-top: 20px;
+}
+
+.textopartido a {
+  display: inline-block;
+  background-color: #f48037;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.textopartido a:hover {
+  background-color: #fa6000;
+}
+
+.sectiontarjeta{
+  display: flex;
+  flex-direction: row;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 420px;
+  border: 1px solid #f48037;
+  box-shadow: 2px 2px 8px 4px #f48037;
+  border-radius: 15px;
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.tarjeta img{
+  width: 100%;
+}
+
+.titulo {
+  font-size: 24px;
+  padding: 10px;
+}
+
+.cuerpo {
+  padding: 10px;
+}
+
+.pie {
+  background: #f48037;
+  border-radius: 0 0 14px 14px;
+  padding: 10px;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.pie a {
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+}
+
+.contenedorac {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agregarcandidatos {
+  background: #f48037;
+  color: #000;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+  text-decoration: none;
+}
+
+.agregarcandidatos:hover {
+  color: #000;
+  /* Cambia el color del texto al color deseado */
+  text-decoration: none;
+  /* Elimina la subraya por defecto */
+}
+
+/* verdetallepartido */
+
+
+/* DETALLECANDIDATO */
+.candidato {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.candidato:hover {
+  transform: scale(1.05);
+}
+
+.candidato img {
+  width: 200px;
+  height: auto;
+  border-radius: 20%;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.candidato h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.candidato p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.candidato a {
+  display: inline-block;
+  background-color: #f48037;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* FORMULARIO */
+.tarjetaformulario {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #f48037;
+  box-shadow: 2px 2px 8px 4px #f48037;
+  border-radius: 15px;
+  font-family: sans-serif;
+}
+
+form {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 0px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #f48037;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  border-radius: 0, 0, 14px, 14px;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+input[type="submit"]:hover {
+  background-color: #fa6000;
+
+}
+
+.eleccionestext {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #f48037;
+  box-shadow: 2px 2px 8px 4px #f48037;
+  border-radius: 10px;
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.eleccionestext p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.eleccionestext ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.eleccionestext ul li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  line-height: 1.5;
+}
+
+.eleccionestext ul li:before {
+  content: "•";
+  position: absolute;
+  left: 10px;
+  color: #f48037;
+}
+
+.creditostext {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #f48037;
+  box-shadow: 2px 2px 8px 4px #f48037;
+  border-radius: 10px;
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}

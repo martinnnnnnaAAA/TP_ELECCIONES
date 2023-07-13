@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELECCIONES | AGREGAR CANDIDATO</title>
+</head>
+<body>
+    
+</body>
+</html>
+<div class = "tarjetaformulario">
+<form action='@Url.Action("GuardarCandidato")' method="post">
+    <input type="hidden" name="idPartido" value=@ViewBag.idPartido>
+    Ingresar Apellido <input type="text" name ="Apellido" placeholder="Apellido">
+    Ingresar Nombre <input type="text" name ="Nombre" placeholder="Nombre">
+    Ingresar Fecha de Nacimiento <input type="date" name ="FechaNacimiento" placeholder="YYYY/MM/DD">
+    Ingresar Link a Fotografia <input type="text" name ="Foto" placeholder="url">
+    Ingresar Postulacion <input type="text" name ="Postulacion" placeholder="Postulacion">
+    <input type="submit" value="Enviar">
+</form>
+</div>
